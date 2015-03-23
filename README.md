@@ -8,10 +8,22 @@ Generate unique random ids from integer keys.
 ![version](http://img.shields.io/npm/v/tinyid.svg?style=flat)
 ![downloads](http://img.shields.io/npm/dm/tinyid.svg?style=flat)
 
+Start generating ids straight away:
+
 ```javascript
 var tinyid = require('tinyid');
 
-tinyid.encode('abcdef', 'fcdabe', 5);
+tinyid.encode(5);
+tinyid.decode('5TXE2');
+```
+
+Or customize:
+
+```javascript
+var tinyid = require('tinyid');
+
+var generator = tinyid('abcdef1234');
+generator.encode(463);
 ```
 
 [sql]: https://gist.github.com/robcowie/1539835
