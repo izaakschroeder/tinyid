@@ -17,17 +17,23 @@ describe('tinyid', function() {
 
 	describe('.encode', function() {
 		it('should work', function() {
-			var enc = tinyid.encode('abcdef', 'fcdabe', 5);
-			var dec = tinyid.decode('abcdef', 'fcdabe', enc);
+			var enc = tinyid.encode('fcdabe', 5);
+			var dec = tinyid.decode('fcdabe', enc);
 			expect(dec).to.equal(5);
+		});
+		it('should shop de wop', function() {
+			tinyid.encode(5);
 		});
 	});
 
 	describe('.decode', function() {
 		it('should work', function() {
-			var enc = tinyid.encode('abcdef', 'fcdabe', 0);
-			var dec = tinyid.decode('abcdef', 'fcdabe', enc);
+			var enc = tinyid.encode('fcdabe', 0);
+			var dec = tinyid.decode('fcdabe', enc);
 			expect(dec).to.equal(0);
+		});
+		it('should shop de wop', function() {
+			tinyid.decode('feec');
 		});
 	});
 });
