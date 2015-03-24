@@ -1,6 +1,6 @@
 {
 	"name": "tinyid",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "Generate unique random ids from integer keys.",
 	"author": "Izaak Schroeder <izaak.schroeder@gmail.com>",
 	"keywords": [ "id", "generation", "shortcode" ],
