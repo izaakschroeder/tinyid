@@ -22,7 +22,11 @@ Or customize:
 ```javascript
 var tinyid = require('tinyid');
 
-var generator = tinyid('abcdef1234');
+var generator = tinyid({
+	wheel: 'abcdef1234',
+	padding: 5
+});
+
 generator.encode(463);
 ```
 
